@@ -6,6 +6,7 @@ import com.bigadataguide.model.OozieConstants;
 import org.apache.oozie.client.AuthOozieClient;
 import org.apache.oozie.client.OozieClient;
 import org.apache.oozie.client.WorkflowJob;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Properties;
@@ -19,6 +20,7 @@ public class OozieSubmitterImpl implements OozieSubmitter {
     private final OozieConfig oozieConfig;
     /*private final HadoopAuthManager hadoopAuthManager;*/
 
+    @Autowired
     public OozieSubmitterImpl(OozieConfig oozieConfig) {
         this.oozieConfig = oozieConfig;
         /*this.hadoopAuthManager = hadoopAuthManager;*/

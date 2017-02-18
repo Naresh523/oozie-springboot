@@ -16,5 +16,6 @@ public class OozieService {
         this.oozieSubmitter = oozieSubmitter;
     }
 
-    boolean success = oozieSubmitter.submit("", "");
+    /*Call Your oozie submitter method to run oozie workflow */
+    /*boolean success = oozieSubmitter.submit("", "");*/
 }
